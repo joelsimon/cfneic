@@ -92,7 +92,7 @@ Compilation and workflow verified to run in zsh on Silicon Mac
  kstnm: station code
  stlo stla: station longitude, latitude
  gcarc: great circle (assuming ISC or NEIC hypocentre)
- tobs: observed time (from tomocat file)
+ tobs: observed travel time (from tomocat file) adjusted for updated event time*
  stder: error estimate (from tomocat file)
  tasc: time between trigger and surfacing
  snr: S/N from tomocat file
@@ -104,6 +104,8 @@ Compilation and workflow verified to run in zsh on Silicon Mac
  b: location error along path due to nonzero acceleration
  h: location error due to deviation from straight line path
  locnerr: equivalent time error (sum of dth and dtb in paper, eq 16&17)
+
+*see tobs.info for more
 
  Referenced paper:
   @Article{Nolet+2024,
